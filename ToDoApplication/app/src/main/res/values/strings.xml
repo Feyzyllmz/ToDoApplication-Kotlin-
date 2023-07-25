@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="added_sign_in">added_sign_in</string>
+    <string name="linearLayout_orientation">horizontal</string>
+    <string name="textView_gravity_bottom">bottom</string>
+    <string name="textView_gravity_centerVertical">center_vertical</string>
+    <string name="checkBox_gravity">end</string>
+    <string name="textView_text_style">italic</string>
+    <string name="editText_input_type">textPassword</string>
+    <string name="server_client_id">705511536663-nvk40l7avllgfsfmkhq3sbp9pi7ffjqg.apps.googleusercontent.com</string>
+    <string name="button_background">?android:selectableItemBackground</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

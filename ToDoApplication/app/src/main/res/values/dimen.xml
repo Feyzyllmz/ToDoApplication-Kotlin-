@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textView_width" >350dp</dimen>
+    <dimen name="textView_height" >80dp</dimen>
+    <dimen name="textView_margin_top" >15dp</dimen>
+    <dimen name="textView_margin_left" >5dp</dimen>
+    <dimen name="textView_padding_left" >10dp</dimen>
+    <dimen name="textView_text_size" >20sp</dimen>
+
+    <dimen name="checkBox_width" >300dp</dimen>
+    <dimen name="checkBox_height" >300dp</dimen>
+    <dimen name="checkBox_margin_top" >20dp</dimen>
+    <dimen name="checkBox_margin_left" >320dp</dimen>
+
+</resources>

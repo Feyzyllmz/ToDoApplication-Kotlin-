@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/MainConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECCDBB"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/textViewSearch"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_border"
+            android:hint="Search.."
+            android:paddingStart="10dp"
+            android:textColor="#a06859"
+            android:textColorHint="#a06859"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineSearchBottom"
+            app:layout_constraintEnd_toEndOf="@id/guidelineSearchEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineSearchStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineSearchTop"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineBoxBottom"
+            app:layout_constraintTop_toTopOf="@id/guidelineBoxTop"
+            app:layout_constraintEnd_toEndOf="@id/guidelineBoxEnd"
+            app:srcCompat="@drawable/search_foreground" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#a06859"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintStart_toStartOf="@id/guidelineBoxStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineBoxTop" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            android:background="#ECCDBB"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineScrollable"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:id="@+id/scrollableLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineAddBoxBottom"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineBoxStart"
+            app:layout_constraintRight_toRightOf="@id/guidelineBoxEnd"
+            app:layout_constraintTop_toTopOf="@id/guidelineAddBoxTop"
+            app:srcCompat="@drawable/add_foreground" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSearchStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSearchEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSearchTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.068" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSearchBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBoxStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBoxEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBoxBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBoxTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineScrollable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineAddBoxBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.999" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineAddBoxTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001"
+            app:srcCompat="@drawable/settings_icon_foreground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
